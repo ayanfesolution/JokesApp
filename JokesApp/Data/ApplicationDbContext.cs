@@ -4,6 +4,7 @@ using JokesApp.Models;
 
 namespace JokesApp.Data;
 
+
 public class ApplicationDbContext : IdentityDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -12,4 +13,10 @@ public class ApplicationDbContext : IdentityDbContext
     }
     public DbSet<JokesApp.Models.Joke> Joke { get; set; } = default!;
 }
+
+
+
+
+
+
 
